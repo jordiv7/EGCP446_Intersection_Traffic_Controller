@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Nov 27 17:22:33 2021
+# Process ID: 27624
+# Current directory: G:/Documents/Homework/EGCP 446/Team_project/Team_project.runs/synth_1
+# Command line: vivado.exe -log FSMStreetLight.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSMStreetLight.tcl
+# Log file: G:/Documents/Homework/EGCP 446/Team_project/Team_project.runs/synth_1/FSMStreetLight.vds
+# Journal file: G:/Documents/Homework/EGCP 446/Team_project/Team_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FSMStreetLight.tcl -notrace

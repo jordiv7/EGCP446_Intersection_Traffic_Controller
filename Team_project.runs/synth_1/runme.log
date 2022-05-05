@@ -1,0 +1,270 @@
+
+*** Running vivado
+    with args -log FSMStreetLight.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSMStreetLight.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source FSMStreetLight.tcl -notrace
+Command: synth_design -top FSMStreetLight -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9836
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FSMStreetLight' [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:3]
+	Parameter s0 bound to: 4'b0000 
+	Parameter s1 bound to: 4'b0001 
+	Parameter s2 bound to: 4'b0010 
+	Parameter s3 bound to: 4'b0011 
+	Parameter s4 bound to: 4'b0100 
+	Parameter s5 bound to: 4'b0101 
+	Parameter s6 bound to: 4'b0110 
+	Parameter s7 bound to: 4'b0111 
+	Parameter s8 bound to: 4'b1000 
+	Parameter s9 bound to: 4'b1001 
+	Parameter s10 bound to: 4'b1010 
+INFO: [Synth 8-155] case statement is not full and has no default [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:50]
+WARNING: [Synth 8-567] referenced signal 'one_second_enable' should be on the sensitivity list [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:46]
+WARNING: [Synth 8-567] referenced signal 'current_state' should be on the sensitivity list [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:46]
+WARNING: [Synth 8-567] referenced signal 'GoE' should be on the sensitivity list [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:46]
+WARNING: [Synth 8-567] referenced signal 'GoN' should be on the sensitivity list [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:46]
+WARNING: [Synth 8-567] referenced signal 'walk' should be on the sensitivity list [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:46]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:113]
+WARNING: [Synth 8-567] referenced signal 'walkLight' should be on the sensitivity list [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:185]
+WARNING: [Synth 8-567] referenced signal 'lightN' should be on the sensitivity list [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:185]
+WARNING: [Synth 8-567] referenced signal 'lightE' should be on the sensitivity list [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:185]
+INFO: [Synth 8-6157] synthesizing module 'Seven_segment_LED_Display_Controller' [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/imports/Downloads/Seven_segment_LED_Display_Controller.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Seven_segment_LED_Display_Controller' (1#1) [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/imports/Downloads/Seven_segment_LED_Display_Controller.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FSMStreetLight' (2#1) [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1014.625 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/constrs_1/imports/Downloads/SevenSegmentDisplayController.xdc]
+Finished Parsing XDC File [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/constrs_1/imports/Downloads/SevenSegmentDisplayController.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/constrs_1/imports/Downloads/SevenSegmentDisplayController.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FSMStreetLight_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FSMStreetLight_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1080.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1080.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1080.109 ; gain = 65.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1080.109 ; gain = 65.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1080.109 ; gain = 65.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSMStreetLight'
+WARNING: [Synth 8-327] inferring latch for variable 'lightN_reg' [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:115]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:53]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                      00000000001 |                             0000
+                      s1 |                      00000000010 |                             0001
+                      s5 |                      00000000100 |                             0101
+                      s6 |                      00000001000 |                             0110
+                      s2 |                      00000010000 |                             0010
+                      s3 |                      00000100000 |                             0011
+                      s7 |                      00001000000 |                             0111
+                      s8 |                      00010000000 |                             1000
+                      s9 |                      00100000000 |                             1001
+                     s10 |                      01000000000 |                             1010
+                      s4 |                      10000000000 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'FSMStreetLight'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'lightE_reg' [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:116]
+WARNING: [Synth 8-327] inferring latch for variable 'walkLight_reg' [G:/Documents/Homework/EGCP 446/Team_project/Team_project.srcs/sources_1/new/FSMStreetLight.v:117]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1080.109 ; gain = 65.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 3     
++---Registers : 
+	                6 Bit    Registers := 3     
++---Muxes : 
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 9     
+	   2 Input    6 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 2     
+	  11 Input    4 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 2     
+	  11 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1080.109 ; gain = 65.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1080.109 ; gain = 65.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1080.109 ; gain = 65.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1080.109 ; gain = 65.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1080.129 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1080.129 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1080.129 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1080.129 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1080.129 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1080.129 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    59|
+|3     |LUT1   |    24|
+|4     |LUT2   |    79|
+|5     |LUT3   |    85|
+|6     |LUT4   |    67|
+|7     |LUT5   |    29|
+|8     |LUT6   |    57|
+|9     |FDCE   |   111|
+|10    |FDPE   |     5|
+|11    |LD     |    16|
+|12    |IBUF   |     5|
+|13    |OBUF   |    15|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1080.129 ; gain = 65.504
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1080.129 ; gain = 0.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1080.129 ; gain = 65.504
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1092.184 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1092.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1092.184 ; gain = 77.559
+INFO: [Common 17-1381] The checkpoint 'G:/Documents/Homework/EGCP 446/Team_project/Team_project.runs/synth_1/FSMStreetLight.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FSMStreetLight_utilization_synth.rpt -pb FSMStreetLight_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 27 17:23:16 2021...

@@ -1,0 +1,87 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Nov 27 17:23:52 2021
+| Host         : Jordis-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file FSMStreetLight_control_sets_placed.rpt
+| Design       : FSMStreetLight
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     9 |
+|    Minimum number of control sets                        |     9 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    28 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     9 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              16 |            5 |
+| No           | No                    | Yes                    |              85 |           22 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              31 |            8 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+-----------------------+------------------+------------------+----------------+--------------+
+|              Clock Signal              |     Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+-----------------------+------------------+------------------+----------------+--------------+
+|  one_second_enable                     | countertwo_enable     | reset_IBUF       |                1 |              4 |         4.00 |
+|  next_state                            |                       |                  |                2 |              5 |         2.50 |
+|  one_second_enable                     | counterone_enable     | reset_IBUF       |                1 |              5 |         5.00 |
+|  one_second_enable                     | timerthree[5]_i_1_n_0 | reset_IBUF       |                2 |              6 |         3.00 |
+|  fsm_enable                            |                       | reset_IBUF       |                3 |             11 |         3.67 |
+|  FSM_onehot_next_state_reg[10]_i_2_n_0 |                       |                  |                3 |             11 |         3.67 |
+|  clk_IBUF_BUFG                         | d1/displayed_number   | walkLight        |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG                         |                       | reset_IBUF       |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG                         |                       | walkLight        |               12 |             47 |         3.92 |
++----------------------------------------+-----------------------+------------------+------------------+----------------+--------------+
+
+
